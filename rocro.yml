@@ -1,0 +1,61 @@
+---
+inspecode:
+
+  global:
+
+  tasks:
+
+  tools:
+
+    cpd:
+      options: [--skip-lexical-errors]
+      thresholds: {num-issues: 999}
+
+    errcheck:
+      thresholds: {num-issues: 999}
+
+    # fortify:
+    #   thresholds: {num-issues: 999}
+
+    fossology:
+      thresholds: {num-issues: 999}
+
+    go-test:
+      thresholds: {num-issues: 999}
+
+    go-vet:
+      thresholds: {num-issues: 999}
+
+    gofmt:
+      auto-fix: true
+      thresholds: {num-issues: 999}
+
+    goimports:
+      auto-fix: true
+      thresholds: {num-issues: 999}
+
+    golint:
+      thresholds: {num-issues: 999}
+
+    gosec:
+      thresholds: {num-issues: 999}
+  
+    grep:
+      thresholds: {num-issues: 999}
+
+    ineffassign:
+      thresholds: {num-issues: 999}
+
+    jscpd:
+      thresholds: {num-issues: 999}
+  
+    misspell:
+      auto-fix: true
+      thresholds: {num-issues: 999}
+
+    staticcheck:
+      thresholds: {num-issues: 999}
+
+    unused:
+      options: [--single-occurrence, --all-likelihoods]
+      thresholds: {num-issues: 999}
