@@ -2,6 +2,7 @@ package bytecode
 
 import (
 	"fmt"
+
 	"github.com/goby-lang/goby/compiler/ast"
 )
 

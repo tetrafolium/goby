@@ -1,8 +1,9 @@
 package parser
 
 import (
-	"github.com/goby-lang/goby/compiler/lexer"
 	"testing"
+
+	"github.com/goby-lang/goby/compiler/lexer"
 )
 
 func TestDefStatement(t *testing.T) {

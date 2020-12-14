@@ -1,9 +1,10 @@
 package parser
 
 import (
+	"testing"
+
 	"github.com/goby-lang/goby/compiler/ast"
 	"github.com/goby-lang/goby/compiler/lexer"
-	"testing"
 )
 
 func TestMethodChainExpression(t *testing.T) {

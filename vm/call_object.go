@@ -2,6 +2,7 @@ package vm
 
 import (
 	"fmt"
+
 	"github.com/goby-lang/goby/compiler/bytecode"
 )
 

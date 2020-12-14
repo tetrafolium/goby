@@ -4,8 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goby-lang/goby/vm"
 	"regexp"
+
+	"github.com/goby-lang/goby/vm"
 )
 
 type errorTestCase struct {

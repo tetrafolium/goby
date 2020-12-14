@@ -2,7 +2,6 @@ package igb
 
 import (
 	"fmt"
-	"github.com/dlclark/regexp2"
 	"io"
 	"log"
 	"math/rand"
@@ -11,6 +10,8 @@ import (
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/dlclark/regexp2"
 
 	parserErr "github.com/goby-lang/goby/compiler/parser/errors"
 
