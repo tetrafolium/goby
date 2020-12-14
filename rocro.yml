@@ -2,6 +2,13 @@
 inspecode:
 
   global:
+    runtime:
+      go: 1.14          # Golang >= 1.14 (README.md#b-from-source)
+
+  experimental:
+    env:
+      GO111MODULE: on   # (README.md#b-from-source)
+      ## Set the Goby project's exact root path $GOBY_ROOT manually
 
   tasks:
 
