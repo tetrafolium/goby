@@ -19,7 +19,7 @@ inspecode:
       reports:
         - from: dockerfilelint-task
           path: "/.reports/dockerfilelint.sarif"
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 1}
 
     - name: hadolint
       type: docker-build
@@ -35,7 +35,7 @@ inspecode:
       reports:
         - from: hadolint-task
           path: "/.reports/hadolint.sarif"
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 11}
 
     - name: yamllint
       type: docker-build
@@ -53,58 +53,59 @@ inspecode:
           path: "/.reports/yamllint.sarif"
           format:
             type: SARIF
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 55}
 
   tools:
 
     cpd:
       options: [--skip-lexical-errors]
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 668}
 
     errcheck:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 67}
 
     # fortify:
     #   thresholds: {num-issues: 999}
 
     fossology:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 34}
 
     go-test:
       thresholds: {num-issues: 999}
+      # panic: You haven't set $GOBY_ROOT properly ... TODO: fix this
 
     go-vet:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 0}
 
     gofmt:
       auto-fix: true
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 5}
 
     goimports:
       auto-fix: true
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 13}
 
     golint:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 1}
 
     gosec:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 62}
   
     grep:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 50}
 
     ineffassign:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 0}
 
     jscpd:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 359}
   
     misspell:
       auto-fix: true
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 7}
 
     staticcheck:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 58}
 
     unused:
       ignore:
