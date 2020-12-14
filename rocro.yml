@@ -57,5 +57,14 @@ inspecode:
       thresholds: {num-issues: 999}
 
     unused:
+    - options: [--single-occurrence, --all-likelihoods]
+      thresholds: {num-issues: 999}   # too many issues detected: 1591 > 1000
+    - ignore:
+        - "vendor/"
+      options: [--single-occurrence, --all-likelihoods]
+      thresholds: {num-issues: 999}
+    - ignore:
+        - "vendor/"
+        - "**/*_test.go"
       options: [--single-occurrence, --all-likelihoods]
       thresholds: {num-issues: 999}
