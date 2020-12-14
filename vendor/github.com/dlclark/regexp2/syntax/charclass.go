@@ -459,7 +459,7 @@ func (c *CharSet) addCategories(cats ...category) {
 		for _, ct2 := range c.categories {
 			if ct.cat == ct2.cat {
 				if ct.negate != ct2.negate {
-					// oposite negations...this mean we just
+					// opposite negations...this mean we just
 					// take us as anything and move on
 					c.makeAnything()
 					return
