@@ -11,7 +11,7 @@ matrix:
 services:
   - postgresql
 
-go_import_path: github.com/goby-lang/goby
+go_import_path: github.com/tetrafolium/goby
 
 before_install:
   - sudo apt-get install apache2-utils
@@ -23,7 +23,7 @@ script:
   - ./travis.sh
 
 env:
-  - "GOBY_ROOT=$HOME/gopath/src/github.com/goby-lang/goby"
+  - "GOBY_ROOT=$HOME/gopath/src/github.com/tetrafolium/goby"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

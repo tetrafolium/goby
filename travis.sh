@@ -6,7 +6,7 @@ set -e
 echo "" > coverage.txt
 
 for d in $(go list ./...); do
-    if [ $d == "github.com/goby-lang/goby/vm" ]; then
+    if [ $d == "github.com/tetrafolium/goby/vm" ]; then
         # Test vm's code without running race detection because that breaks plugin tests.
         # This can generate full coverage report of vm package.
         # Test that need to run without race detection include NoRaceDetection in the name,
