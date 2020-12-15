@@ -73,7 +73,7 @@ type EventDesc struct {
 	Src []string
 
 	// Dst is the destination state that the FSM will be in if the transition
-	// succeds.
+	// succeeds.
 	Dst string
 }
 
@@ -121,7 +121,7 @@ type Callbacks map[string]Callback
 //
 // If both a shorthand version and a full version is specified it is undefined
 // which version of the callback will end up in the internal map. This is due
-// to the psuedo random nature of Go maps. No checking for multiple keys is
+// to the pseudo random nature of Go maps. No checking for multiple keys is
 // currently performed.
 func NewFSM(initial string, events []EventDesc, callbacks map[string]Callback) *FSM {
 	f := &FSM{

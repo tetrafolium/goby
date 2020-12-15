@@ -33,7 +33,7 @@ type Match struct {
 
 // Group is an explicit or implit (group 0) matched group within the pattern
 type Group struct {
-	Capture // the last capture of this group is embeded for ease of use
+	Capture // the last capture of this group is embedded for ease of use
 
 	Name     string    // group name
 	Captures []Capture // captures of this group
