@@ -19,7 +19,7 @@ parts:
   goby:
     source: .
     plugin: go
-    go-importpath: github.com/goby-lang/goby
+    go-importpath: github.com/tetrafolium/goby
     install:
       cp -R lib/ $SNAPCRAFT_PART_INSTALL
     after: [go]

@@ -11,18 +11,18 @@ If you are very interested in `Goby` or planning contribute `Goby` frequently, p
 - Any issues listed in goby's [Go Report Card](https://goreportcard.com/report/github.com/goby-lang/goby).
 - Play around goby and report any bug you find.
 - Write benchmarks for goby (we really need this and really haven't had time to do it yet 😢)
-- Help us document built in class and libraries' api, see the [guideline](https://github.com/goby-lang/goby/wiki/Documenting-Goby-Code)
+- Help us document built in class and libraries' api, see the [guideline](https://github.com/tetrafolium/goby/wiki/Documenting-Goby-Code)
 
 
 #### If you're interested in lexeing/parsing, please check `token`, `lexer`, `ast` and `parser` packages
 
-#### If you're interested in compiler, check [bytecode specifications](https://github.com/goby-lang/goby/wiki/Bytecode-Instruction-specs) and bytecode package's [tests](https://github.com/goby-lang/goby/blob/master/bytecode/generator_test.go) for some compiled examples.
+#### If you're interested in compiler, check [bytecode specifications](https://github.com/tetrafolium/goby/wiki/Bytecode-Instruction-specs) and bytecode package's [tests](https://github.com/tetrafolium/goby/blob/master/bytecode/generator_test.go) for some compiled examples.
 
 #### If you're interested in VM's structure, please contact me directly since a lot of things haven't been documented yet.
 
 #### If you're a Ruby developer:
-  - you can start with adding methods to built in classes like [`Array`](https://github.com/goby-lang/goby/blob/master/vm/array.go) or [`Hash`](https://github.com/goby-lang/goby/blob/master/vm/hash.go) using `Golang`. And here's a [guideline](https://github.com/goby-lang/goby/wiki/Contibuting-a-Method) for contributing built in methods.
-  - you can also porting Ruby's standard lib using `Goby` (not Go), see [lib directory](https://github.com/goby-lang/goby/tree/master/lib/net). You'll feel like you're just writing plain Ruby 😄
+  - you can start with adding methods to built in classes like [`Array`](https://github.com/tetrafolium/goby/blob/master/vm/array.go) or [`Hash`](https://github.com/tetrafolium/goby/blob/master/vm/hash.go) using `Golang`. And here's a [guideline](https://github.com/tetrafolium/goby/wiki/Contibuting-a-Method) for contributing built in methods.
+  - you can also porting Ruby's standard lib using `Goby` (not Go), see [lib directory](https://github.com/tetrafolium/goby/tree/master/lib/net). You'll feel like you're just writing plain Ruby 😄
 
 #### If you want to propose a feature, just open an issue with `[feature request]` prefix on title.
 
@@ -41,7 +41,7 @@ But if you want to develop Goby or you installed Goby from source, you might wan
 Add the following line to your shell config file, either `~/.bashrc`, `~/.bash_profile`, or `~/.zshrc` if you're using zsh.
 
 ```
-export GOBY_ROOT=$GOPATH/src/github.com/goby-lang/goby
+export GOBY_ROOT=$GOPATH/src/github.com/tetrafolium/goby
 ```
 
 The most common messages you'll see if you do not set `$GOBY_ROOT` right are 'library not found'. For example:

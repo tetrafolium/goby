@@ -1,4 +1,4 @@
-module github.com/goby-lang/goby
+module github.com/tetrafolium/goby
 
 go 1.12
 

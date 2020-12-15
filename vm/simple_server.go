@@ -14,8 +14,8 @@ import (
 	"strconv"
 
 	"github.com/fatih/structs"
-	"github.com/goby-lang/goby/vm/classes"
 	"github.com/gorilla/mux"
+	"github.com/tetrafolium/goby/vm/classes"
 )
 
 type request struct {

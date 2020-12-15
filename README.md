@@ -49,13 +49,13 @@ Click to see the demo below (powered by [asciinema](https://asciinema.org) and [
 
 ## Structure
 
-![](https://github.com/goby-lang/goby/blob/master/wiki/goby_structure.png)
+![](https://github.com/tetrafolium/goby/blob/master/wiki/goby_structure.png)
 
 ## 3D Visualization
 
 A 3D visualization of Goby codebase, powered by [GoCity](https://go-city.github.io/)
 
-[![Goby 3D Visualization](https://github.com/goby-lang/goby/blob/master/wiki/goby_codebase_gocity-min.png)](https://go-city.github.io/#/github.com/goby-lang/goby)
+[![Goby 3D Visualization](https://github.com/tetrafolium/goby/blob/master/wiki/goby_codebase_gocity-min.png)](https://go-city.github.io/#/github.com/goby-lang/goby)
 
 ## Major Features
 
@@ -65,7 +65,7 @@ A 3D visualization of Goby codebase, powered by [GoCity](https://go-city.github.
 - Builtin multi-threaded server and DB library
 - REPL (run `goby -i`)
 
-Here's a [complete list](https://github.com/goby-lang/goby/wiki/Features) of all the features.
+Here's a [complete list](https://github.com/tetrafolium/goby/wiki/Features) of all the features.
 
 ## Installation
 
@@ -73,7 +73,7 @@ Confirmed Goby runs on Mac OS and Linux for now. Try Goby on Windows and let us 
 
 ### A. Via Homebrew (binary installation for Mac OS)
 
-**Note: Please check the [latest release](https://github.com/goby-lang/goby/releases) before installing Goby via Homebrew**
+**Note: Please check the [latest release](https://github.com/tetrafolium/goby/releases) before installing Goby via Homebrew**
 
 ```
 brew tap goby-lang/goby
@@ -91,16 +91,16 @@ Try this if you'd like to contribute Goby! Skip 1 if you already have Golang in 
     - Make sure `$GOPATH` in your shell's config file( like .bashrc) is correct
     - Add your `$GOPATH/bin` to `$PATH`
     - Add `export GO111MODULE=on` to your shell profile
-2. Run `go get github.com/goby-lang/goby`
+2. Run `go get github.com/tetrafolium/goby`
 3. Set the Goby project's exact root path `$GOBY_ROOT` manually, which should be:
 
 ```
-$GOPATH/src/github.com/goby-lang/goby
+$GOPATH/src/github.com/tetrafolium/goby
 ```
 
 ### C. Installation on a Linux system
 
-In order to install Go, Goby and PostgreSQL on a Linux system, see the [wiki page](https://github.com/goby-lang/goby/wiki/Setup-Go,-Goby-and-PostgreSQL-on-a-Linux-system).
+In order to install Go, Goby and PostgreSQL on a Linux system, see the [wiki page](https://github.com/tetrafolium/goby/wiki/Setup-Go,-Goby-and-PostgreSQL-on-a-Linux-system).
 
 ### Verifying Goby installation
 
@@ -153,19 +153,19 @@ SpaceVim users can load the [`lang#goby`](https://spacevim.org/layers/lang/goby/
 
 ## Sample codes
 
-- [Built a stack data structure using Goby](https://github.com/goby-lang/goby/blob/master/samples/stack.gb)
-- [Running a "Hello World" app with built in server library](https://github.com/goby-lang/goby/blob/master/samples/server/server.gb)
-- [Sending request using http library](https://github.com/goby-lang/goby/blob/master/samples/http.gb)
-- [Running load test on blocking server](https://github.com/goby-lang/goby/blob/master/samples/server/blocking_server.gb) (This shows `Goby`'s simple server is very performant and can handle requests concurrently)
-- [One thousand threads](https://github.com/goby-lang/goby/blob/master/samples/one_thousand_threads.gb)
+- [Built a stack data structure using Goby](https://github.com/tetrafolium/goby/blob/master/samples/stack.gb)
+- [Running a "Hello World" app with built in server library](https://github.com/tetrafolium/goby/blob/master/samples/server/server.gb)
+- [Sending request using http library](https://github.com/tetrafolium/goby/blob/master/samples/http.gb)
+- [Running load test on blocking server](https://github.com/tetrafolium/goby/blob/master/samples/server/blocking_server.gb) (This shows `Goby`'s simple server is very performant and can handle requests concurrently)
+- [One thousand threads](https://github.com/tetrafolium/goby/blob/master/samples/one_thousand_threads.gb)
 
-More sample Goby codes can be found in [sample directory](https://github.com/goby-lang/goby/tree/master/samples).
+More sample Goby codes can be found in [sample directory](https://github.com/tetrafolium/goby/tree/master/samples).
 
 ## Joining to Goby
 
 **Join us on Slack!** [![](https://goby-slack-invite.herokuapp.com/badge.svg)](https://goby-slack-invite.herokuapp.com)
 
-See the [guideline](https://github.com/goby-lang/goby/blob/master/CONTRIBUTING.md).
+See the [guideline](https://github.com/tetrafolium/goby/blob/master/CONTRIBUTING.md).
 
 ## Maintainers
 
@@ -226,9 +226,9 @@ See the [guideline](https://github.com/goby-lang/goby/blob/master/CONTRIBUTING.m
 
 * JetBrains [Goland IDE](https://www.jetbrains.com/go/?from=goby)
 
-[![JetBrains Goland](https://github.com/goby-lang/goby/blob/master/wiki/goland_logo-text.png)](https://www.jetbrains.com/go/?from=goby)
+[![JetBrains Goland](https://github.com/tetrafolium/goby/blob/master/wiki/goland_logo-text.png)](https://www.jetbrains.com/go/?from=goby)
 
-**Supporting Goby by sending your first PR! See [contribution guideline](https://github.com/goby-lang/goby/blob/master/CONTRIBUTING.md)**
+**Supporting Goby by sending your first PR! See [contribution guideline](https://github.com/tetrafolium/goby/blob/master/CONTRIBUTING.md)**
 
 
 ## References

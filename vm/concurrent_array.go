@@ -3,8 +3,8 @@ package vm
 import (
 	"sync"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // ConcurrentArrayMethodsForwardingTable is a pseudo-constant definition of the forwarded methods, mapped to a boolean representing the

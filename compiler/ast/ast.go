@@ -3,7 +3,7 @@ package ast
 import (
 	"bytes"
 
-	"github.com/goby-lang/goby/compiler/token"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 // BaseNode holds the attribute every expression or statement should have

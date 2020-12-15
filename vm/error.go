@@ -5,7 +5,7 @@ import (
 
 	"strings"
 
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // Error class is actually a special struct to hold internal error types with messages.

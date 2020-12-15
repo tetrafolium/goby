@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goby-lang/goby/compiler"
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/parser"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/compiler"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/parser"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 const mainThreadID = 0

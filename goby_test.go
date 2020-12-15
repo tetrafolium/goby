@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goby-lang/goby/vm"
+	"github.com/tetrafolium/goby/vm"
 )
 
 func init() {

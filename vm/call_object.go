@@ -2,7 +2,8 @@ package vm
 
 import (
 	"fmt"
-	"github.com/goby-lang/goby/compiler/bytecode"
+
+	"github.com/tetrafolium/goby/compiler/bytecode"
 )
 
 type callObject struct {

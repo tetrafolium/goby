@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/goby-lang/goby/compiler/parser/states"
+	"github.com/tetrafolium/goby/compiler/parser/states"
 )
 
 // These are state machine's events
