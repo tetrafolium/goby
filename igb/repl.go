@@ -2,7 +2,6 @@ package igb
 
 import (
 	"fmt"
-	"github.com/dlclark/regexp2"
 	"io"
 	"log"
 	"math/rand"
@@ -12,15 +11,17 @@ import (
 	"strings"
 	"time"
 
-	parserErr "github.com/goby-lang/goby/compiler/parser/errors"
+	"github.com/dlclark/regexp2"
+
+	parserErr "github.com/tetrafolium/goby/compiler/parser/errors"
 
 	"github.com/chzyer/readline"
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/lexer"
-	"github.com/goby-lang/goby/compiler/parser"
-	"github.com/goby-lang/goby/vm"
 	"github.com/looplab/fsm"
 	"github.com/mattn/go-colorable"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/lexer"
+	"github.com/tetrafolium/goby/compiler/parser"
+	"github.com/tetrafolium/goby/vm"
 )
 
 const (

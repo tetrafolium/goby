@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // FileObject is a special type that contains file pointer so we can keep track on target file.

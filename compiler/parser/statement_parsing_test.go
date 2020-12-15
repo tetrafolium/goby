@@ -1,9 +1,10 @@
 package parser
 
 import (
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/lexer"
 	"testing"
+
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/lexer"
 )
 
 func TestReturnStatements(t *testing.T) {

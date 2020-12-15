@@ -4,8 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goby-lang/goby/vm"
 	"regexp"
+
+	"github.com/tetrafolium/goby/vm"
 )
 
 type errorTestCase struct {
@@ -354,7 +355,7 @@ end
   }
 ]
 `,
-	},
+		},
 		// Single class definition
 		{`require 'ripper'; Ripper.instruction("
     class Foo

@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/parser/precedence"
-	"github.com/goby-lang/goby/compiler/token"
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/parser/precedence"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 // Case expression forms if statement when parsing it

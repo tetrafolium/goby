@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/goby-lang/goby/compiler/token"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 func TestNextToken(t *testing.T) {

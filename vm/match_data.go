@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/dlclark/regexp2"
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // Match is an alias of regexp2.Match

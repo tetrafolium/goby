@@ -1,8 +1,8 @@
 package vm
 
 import (
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // NullObject (`nil`) represents the null value in Goby.

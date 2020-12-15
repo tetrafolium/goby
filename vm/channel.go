@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // ChannelObject represents Goby's "channel", which equips the Golang' channel and works with `thread`.

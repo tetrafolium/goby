@@ -3,9 +3,9 @@ package db
 import (
 	"fmt"
 
-	"github.com/goby-lang/goby/vm"
-	"github.com/goby-lang/goby/vm/errors"
 	"github.com/jmoiron/sqlx"
+	"github.com/tetrafolium/goby/vm"
+	"github.com/tetrafolium/goby/vm/errors"
 
 	// all packages imported by this need postgres
 	_ "github.com/lib/pq"

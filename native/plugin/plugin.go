@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/goby-lang/goby/vm"
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
 	"github.com/st0012/metago"
+	"github.com/tetrafolium/goby/vm"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 type (

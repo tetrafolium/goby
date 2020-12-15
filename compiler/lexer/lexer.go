@@ -1,8 +1,8 @@
 package lexer
 
 import (
-	"github.com/goby-lang/goby/compiler/token"
 	"github.com/looplab/fsm"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 // Lexer is used for tokenizing programs

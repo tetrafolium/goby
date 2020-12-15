@@ -7,7 +7,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 const (

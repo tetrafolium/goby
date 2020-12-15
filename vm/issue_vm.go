@@ -6,7 +6,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/goby-lang/goby/compiler/parser"
+	"github.com/tetrafolium/goby/compiler/parser"
 )
 
 // InitIssueReportVM initializes a vm in test mode for issue reporting

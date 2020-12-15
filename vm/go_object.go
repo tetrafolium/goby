@@ -3,9 +3,9 @@ package vm
 import (
 	"fmt"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
 	"github.com/st0012/metago"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // GoObject ...

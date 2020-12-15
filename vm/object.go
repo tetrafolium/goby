@@ -6,7 +6,7 @@ import (
 
 	"reflect"
 
-	"github.com/goby-lang/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/bytecode"
 )
 
 // Object represents all objects in Goby, including Array, Integer or even Method and Error.

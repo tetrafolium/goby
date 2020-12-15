@@ -3,14 +3,14 @@ package parser
 import (
 	"fmt"
 
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/lexer"
-	"github.com/goby-lang/goby/compiler/parser/errors"
-	"github.com/goby-lang/goby/compiler/parser/events"
-	"github.com/goby-lang/goby/compiler/parser/precedence"
-	"github.com/goby-lang/goby/compiler/parser/states"
-	"github.com/goby-lang/goby/compiler/token"
 	"github.com/looplab/fsm"
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/lexer"
+	"github.com/tetrafolium/goby/compiler/parser/errors"
+	"github.com/tetrafolium/goby/compiler/parser/events"
+	"github.com/tetrafolium/goby/compiler/parser/precedence"
+	"github.com/tetrafolium/goby/compiler/parser/states"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 // Parser represents lexical analyzer struct

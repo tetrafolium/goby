@@ -3,7 +3,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/goby-lang/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/classes"
 )
 
 // BooleanObject represents boolean object in goby and no instance methods are contained within it.

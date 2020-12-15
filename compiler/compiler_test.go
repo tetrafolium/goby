@@ -3,8 +3,8 @@ package compiler
 import (
 	"testing"
 
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/parser"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/parser"
 )
 
 type testInstruction struct {

@@ -8,15 +8,15 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goby-lang/goby/compiler"
-	"github.com/goby-lang/goby/compiler/parser"
-	"github.com/goby-lang/goby/igb"
-	_ "github.com/goby-lang/goby/native/db"
-	_ "github.com/goby-lang/goby/native/plugin"
-	_ "github.com/goby-lang/goby/native/result"
-	_ "github.com/goby-lang/goby/native/ripper"
-	"github.com/goby-lang/goby/vm"
 	"github.com/pkg/profile"
+	"github.com/tetrafolium/goby/compiler"
+	"github.com/tetrafolium/goby/compiler/parser"
+	"github.com/tetrafolium/goby/igb"
+	_ "github.com/tetrafolium/goby/native/db"
+	_ "github.com/tetrafolium/goby/native/plugin"
+	_ "github.com/tetrafolium/goby/native/result"
+	_ "github.com/tetrafolium/goby/native/ripper"
+	"github.com/tetrafolium/goby/vm"
 )
 
 const version string = vm.Version

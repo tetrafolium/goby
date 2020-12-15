@@ -2,11 +2,12 @@ package parser
 
 import (
 	"fmt"
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/parser/errors"
-	"github.com/goby-lang/goby/compiler/parser/precedence"
-	"github.com/goby-lang/goby/compiler/token"
 	"strconv"
+
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/parser/errors"
+	"github.com/tetrafolium/goby/compiler/parser/precedence"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 func (p *Parser) parseIntegerLiteral() ast.Expression {

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // Instance methods --------------------------------------------------------

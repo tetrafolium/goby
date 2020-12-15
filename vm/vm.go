@@ -10,11 +10,11 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/goby-lang/goby/compiler"
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/parser"
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/compiler"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/parser"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // Version stores current Goby version
@@ -68,7 +68,7 @@ type VM struct {
 	// the fallback order is:
 	// 1. $GOBY_ROOT/lib
 	// 2. /usr/local/Cellar/goby/VERSION/lib - installed via homebrew
-	// 3. $GOPATH/src/github.com/goby-lang/goby/lib - development environment
+	// 3. $GOPATH/src/github.com/tetrafolium/goby/lib - development environment
 	libPath string
 
 	channelObjectMap *objectMap
@@ -141,10 +141,9 @@ func (vm *VM) assignLibPath() (err error) {
 		// if GOBY_ROOT is not set, fallback to homebrew's path
 		gobyRoot = fmt.Sprintf("/usr/local/Cellar/goby/%s", Version)
 
-
 		// if it's not installed via homebrew, assume it's in development env and Goby's source is under GOPATH
 		if _, err := os.Stat(gobyRoot); err != nil {
-			path, _ := filepath.Abs(os.Getenv("GOPATH") + "/src/github.com/goby-lang/goby")
+			path, _ := filepath.Abs(os.Getenv("GOPATH") + "/src/github.com/tetrafolium/goby")
 
 			if _, err = os.Stat(path); err != nil {
 				return fmt.Errorf("You haven't set $GOBY_ROOT properly")

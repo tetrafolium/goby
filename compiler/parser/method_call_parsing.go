@@ -1,11 +1,11 @@
 package parser
 
 import (
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/parser/arguments"
-	"github.com/goby-lang/goby/compiler/parser/events"
-	"github.com/goby-lang/goby/compiler/parser/precedence"
-	"github.com/goby-lang/goby/compiler/token"
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/parser/arguments"
+	"github.com/tetrafolium/goby/compiler/parser/events"
+	"github.com/tetrafolium/goby/compiler/parser/precedence"
+	"github.com/tetrafolium/goby/compiler/token"
 )
 
 func (p *Parser) parseCallExpressionWithoutReceiver(receiver ast.Expression) ast.Expression {

@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/goby-lang/goby/compiler"
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/lexer"
-	"github.com/goby-lang/goby/compiler/parser"
-	"github.com/goby-lang/goby/compiler/token"
-	"github.com/goby-lang/goby/vm"
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/compiler"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/lexer"
+	"github.com/tetrafolium/goby/compiler/parser"
+	"github.com/tetrafolium/goby/compiler/token"
+	"github.com/tetrafolium/goby/vm"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // Ripper is a loadable library and has abilities to parse/lex/tokenize/get instructions of Goby codes from String.

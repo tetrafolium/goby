@@ -2,9 +2,10 @@ package parser
 
 import (
 	"fmt"
-	"github.com/goby-lang/goby/compiler/ast"
-	"github.com/goby-lang/goby/compiler/lexer"
 	"testing"
+
+	"github.com/tetrafolium/goby/compiler/ast"
+	"github.com/tetrafolium/goby/compiler/lexer"
 )
 
 const (

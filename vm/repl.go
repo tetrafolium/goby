@@ -1,8 +1,8 @@
 package vm
 
 import (
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/compiler/parser"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/compiler/parser"
 )
 
 // InitForREPL does following things:

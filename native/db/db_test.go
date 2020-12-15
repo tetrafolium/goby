@@ -3,8 +3,8 @@ package db
 import (
 	"testing"
 
-	"github.com/goby-lang/goby/vm"
 	"github.com/jmoiron/sqlx"
+	"github.com/tetrafolium/goby/vm"
 )
 
 func setupDB(t *testing.T) *sqlx.DB {

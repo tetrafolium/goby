@@ -3,7 +3,7 @@ package errors
 import (
 	"fmt"
 
-	"github.com/goby-lang/goby/compiler/parser/arguments"
+	"github.com/tetrafolium/goby/compiler/parser/arguments"
 )
 
 // Enums for different kinds of syntax errors

@@ -6,8 +6,8 @@ import (
 
 	"sort"
 
-	"github.com/goby-lang/goby/vm/classes"
-	"github.com/goby-lang/goby/vm/errors"
+	"github.com/tetrafolium/goby/vm/classes"
+	"github.com/tetrafolium/goby/vm/errors"
 )
 
 // ArrayObject represents an instance from Array class.
@@ -262,7 +262,6 @@ var builtinArrayInstanceMethods = []*BuiltinMethodObject{
 			if aLen < 2 || aLen > 3 {
 				return t.vm.InitErrorObject(errors.ArgumentError, sourceLine, errors.WrongNumberOfArgumentRange, 2, 3, aLen)
 			}
-
 
 			typeErr := t.vm.checkArgTypes(args, sourceLine, classes.IntegerClass)
 
@@ -1024,7 +1023,6 @@ var builtinArrayInstanceMethods = []*BuiltinMethodObject{
 				return arr.Elements[arrLength-1]
 			}
 
-
 			typeErr := t.vm.checkArgTypes(args, sourceLine, classes.IntegerClass)
 
 			if typeErr != nil {
@@ -1032,7 +1030,6 @@ var builtinArrayInstanceMethods = []*BuiltinMethodObject{
 			}
 
 			value := args[0].Value().(int)
-
 
 			if value < 1 {
 				return t.vm.InitErrorObject(errors.ArgumentError, sourceLine, errors.NegativeValue, value)

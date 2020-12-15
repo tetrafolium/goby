@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/goby-lang/goby/vm"
+	"github.com/tetrafolium/goby/vm"
 )
 
 // Object is this packages copy of the the Object type

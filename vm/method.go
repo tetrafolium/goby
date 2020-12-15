@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/goby-lang/goby/compiler/bytecode"
-	"github.com/goby-lang/goby/vm/classes"
+	"github.com/tetrafolium/goby/compiler/bytecode"
+	"github.com/tetrafolium/goby/vm/classes"
 )
 
 // MethodObject represents methods defined using goby.
