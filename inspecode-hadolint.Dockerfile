@@ -14,7 +14,7 @@ ENV GOBIN="$GOROOT/bin" \
     GOPATH="/.go" \
     PATH="${GOPATH}/bin:/usr/local/go/bin:$PATH"
 
-ENV REPOPATH="github.com/tetrafolium/golangci-lint" \
+ENV REPOPATH="github.com/tetrafolium/goby" \
     TOOLPATH="github.com/tetrafolium/inspecode-tasks"
 ENV REPODIR="${GOPATH}/src/${REPOPATH}" \
     TOOLDIR="${GOPATH}/src/${TOOLPATH}"
