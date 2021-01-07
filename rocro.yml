@@ -2,6 +2,8 @@
 inspecode:
 
   global:
+    ignore:
+      - "vendor/"
     runtime:
       go: 1.14          # Golang >= 1.14 (README.md#b-from-source)
 
