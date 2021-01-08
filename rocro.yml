@@ -68,7 +68,7 @@ inspecode:
 
     cpd:
       options: [--skip-lexical-errors]
-      thresholds: {num-issues: 668}
+      thresholds: {num-issues: 28}
 
     errcheck:
       thresholds: {num-issues: 67}
@@ -77,7 +77,7 @@ inspecode:
     #   thresholds: {num-issues: 999}
 
     fossology:
-      thresholds: {num-issues: 34}
+      thresholds: {num-issues: 2}
 
     go-test:
       thresholds: {num-issues: 1}
@@ -100,17 +100,17 @@ inspecode:
       thresholds: {num-issues: 62}
   
     grep:
-      thresholds: {num-issues: 50}
+      thresholds: {num-issues: 39}
 
     ineffassign:
       thresholds: {num-issues: 0}
 
     jscpd:
-      thresholds: {num-issues: 359}
+      thresholds: {num-issues: 195}
   
     misspell:
       auto-fix: true
-      thresholds: {num-issues: 7}
+      thresholds: {num-issues: 0}
 
     staticcheck:
       thresholds: {num-issues: 58}
