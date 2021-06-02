@@ -1,4 +1,4 @@
-FROM python:3-alpine AS yamllint-task
+FROM python:3-alpine AS linter-stage
 
 ### Install golang ...
 RUN apk add --update --no-cache go && \
@@ -17,15 +17,15 @@ ENV REPOPATH="github.com/tetrafolium/goby" \
 ENV REPODIR="${GOPATH}/src/${REPOPATH}" \
     TOOLDIR="${GOPATH}/src/${TOOLPATH}"
 
-### Get inspecode-tasks tool ...
-RUN go get -u "${TOOLPATH}" || true
-
 ARG OUTDIR
 ENV OUTDIR="${OUTDIR:-"/.reports"}"
 
 RUN mkdir -p "${REPODIR}" "${OUTDIR}"
 COPY . "${REPODIR}"
 WORKDIR "${REPODIR}"
+
+### Put symlink refers submodule-path at origin-path
+RUN ln -s "${REPODIR}/$(basename "${TOOLPATH}")" "${TOOLDIR}"
 
 ### Run yamllint ...
 RUN yamllint -f parsable . > "${OUTDIR}/yamllint.issues" || true

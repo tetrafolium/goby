@@ -16,49 +16,52 @@ inspecode:
 
     - name: dockerfilelint
       type: docker-build
-      dockerfile: "inspecode-dockerfilelint.Dockerfile"
+      dockerfile: ".rocro/dflint/Dockerfile"
       options:
         --build-arg:
           OUTDIR=/.reports
       artifacts:
-        - from: dockerfilelint-task
-          path: "/.reports/dockerfilelint.json"
-        - from: dockerfilelint-task
-          path: "/.reports/dockerfilelint.sarif"
+        uploads:
+          - stage: linter-stage
+            path: "/.reports/dockerfilelint.json"
+          - stage: linter-stage
+            path: "/.reports/dockerfilelint.sarif"
       reports:
-        - from: dockerfilelint-task
+        - stage: linter-stage
           path: "/.reports/dockerfilelint.sarif"
       thresholds: {num-issues: 1}
 
     - name: hadolint
       type: docker-build
-      dockerfile: "inspecode-hadolint.Dockerfile"
+      dockerfile: ".rocro/hadolint/Dockerfile"
       options:
         --build-arg:
           OUTDIR=/.reports
       artifacts:
-        - from: hadolint-task
-          path: "/.reports/hadolint.json"
-        - from: hadolint-task
-          path: "/.reports/hadolint.sarif"
+        uploads:
+          - stage: linter-stage
+            path: "/.reports/hadolint.json"
+          - stage: linter-stage
+            path: "/.reports/hadolint.sarif"
       reports:
-        - from: hadolint-task
+        - stage: linter-stage
           path: "/.reports/hadolint.sarif"
       thresholds: {num-issues: 11}
 
     - name: yamllint
       type: docker-build
-      dockerfile: "inspecode-yamllint.Dockerfile"
+      dockerfile: ".rocro/yamllint/Dockerfile"
       options:
         --build-arg:
           OUTDIR=/.reports
       artifacts:
-        - from: yamllint-task
-          path: "/.reports/yamllint.issues"
-        - from: yamllint-task
-          path: "/.reports/yamllint.sarif"
+        uploads:
+          - stage: linter-stage
+            path: "/.reports/yamllint.issues"
+          - stage: linter-stage
+            path: "/.reports/yamllint.sarif"
       reports:
-        - from: yamllint-task
+        - stage: linter-stage
           path: "/.reports/yamllint.sarif"
           format:
             type: SARIF

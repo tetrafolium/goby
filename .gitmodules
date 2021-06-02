@@ -1,0 +1,3 @@
+[submodule "inspecode-tasks"]
+	path = inspecode-tasks
+	url = https://github.com/tetrafolium/inspecode-tasks.git
