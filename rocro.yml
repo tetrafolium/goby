@@ -18,8 +18,8 @@ inspecode:
       type: docker-build
       dockerfile: ".rocro/dflint/Dockerfile"
       options:
-        --build-arg:
-          OUTDIR=/.reports
+        --context: .
+        --build-arg: [OUTDIR=/.reports]
       artifacts:
         uploads:
           - stage: linter-stage
@@ -35,8 +35,8 @@ inspecode:
       type: docker-build
       dockerfile: ".rocro/hadolint/Dockerfile"
       options:
-        --build-arg:
-          OUTDIR=/.reports
+        --context: .
+        --build-arg: [OUTDIR=/.reports]
       artifacts:
         uploads:
           - stage: linter-stage
@@ -52,8 +52,8 @@ inspecode:
       type: docker-build
       dockerfile: ".rocro/yamllint/Dockerfile"
       options:
-        --build-arg:
-          OUTDIR=/.reports
+        --context: .
+        --build-arg: [OUTDIR=/.reports]
       artifacts:
         uploads:
           - stage: linter-stage
