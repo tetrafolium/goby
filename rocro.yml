@@ -46,7 +46,7 @@ inspecode:
       reports:
         - stage: linter-stage
           path: "/.reports/hadolint.sarif"
-      thresholds: {num-issues: 11}
+      thresholds: {num-issues: 9}
 
     - name: yamllint
       type: docker-build
@@ -109,7 +109,7 @@ inspecode:
       thresholds: {num-issues: 0}
 
     jscpd:
-      thresholds: {num-issues: 195}
+      thresholds: {num-issues: 324}
   
     misspell:
       auto-fix: true
